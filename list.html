@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/fontawesome.min.css" />
+
+    <!-- slick -->
+    <link rel="stylesheet" href="./CSS/slick-theme.css" />
+    <link rel="stylesheet" href="./CSS/slick.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <!-- fav-icon -->
+    <link rel="shortcut icon" href="./img/logo/fav_icon.jpg" type="image/x-icon" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nepal Live</title>
+  </head>
+  <body>
+    <button onclick="toTop()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <!-- 1. header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-1">
+            <div class="hamburger-lines text-start" onclick="showMenu()">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-10">
+            <div class="logo">
+              <a href="index.html">
+                <img src="./img/logo/logo.png" alt="News portal logo" />
+              </a>
+            </div>
+            <div class="date">
+              <ul class="d-flex justify-content-center">
+                <li>शुक्रबार, मंसिर २३, २०७९</li>
+                <li id="dateToday">Fri, Dec 09, 2022</li>
+                <li id="timeToday">12 : 00 : 00</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-1">
+            <div class="header-right d-flex align-items-start">
+              <div class="socials d-none d-md-flex justify-content-start">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+              <div class="search" onclick="showSearch()">
+                <button>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 1.1 Mobile menu -->
+    <div class="mobile-menu-wrapper">
+      <div class="mobile-menu-top d-flex justify-content-between">
+        <a href="index.html">
+          <img src="./img/logo/logo.png" alt="" />
+        </a>
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+      </div>
+
+      <ul class="menu-items flex-column">
+        <li class="active">
+          <a href="index.html"> गृहपृष्ठ</a>
+        </li>
+        <li><a href="list.html">मुख्य समाचार</a></li>
+        <li>
+          <h1 class="menu-title">नेपाल<span> लाइभ</span></h1>
+          <ul>
+            <li><a href="list.html"> नेपाल लाइभ</a></li>
+            <li><a href="list.html">राजनीति</a></li>
+            <li><a href="list.html"> निर्वाचन विशेष</a></li>
+            <li><a href="list.html"> प्रवास</a></li>
+            <li><a href="list.html"> विचार</a></li>
+            <li><a href="list.html"> फिचर</a></li>
+            <li><a href="list.html"> समाचार</a></li>
+            <li><a href="list.html"> ब्लग</a></li>
+            <li><a href="list.html"> समाज </a></li>
+            <li><a href="list.html"> अन्तर्वार्ता</a></li>
+          </ul>
+        </li>
+        <li>
+          <h1 class="menu-title">बिजनेस <span> लाइभ</span></h1>
+          <ul>
+            <li><a href="list.html"> नेपाल लाइभ</a></li>
+            <li><a href="list.html">राजनीति</a></li>
+            <li><a href="list.html"> निर्वाचन विशेष</a></li>
+            <li><a href="list.html"> प्रवास</a></li>
+            <li><a href="list.html"> विचार</a></li>
+            <li><a href="list.html"> फिचर</a></li>
+            <li><a href="list.html"> समाचार</a></li>
+            <li><a href="list.html"> ब्लग</a></li>
+            <li><a href="list.html"> समाज </a></li>
+            <li><a href="list.html"> अन्तर्वार्ता</a></li>
+          </ul>
+        </li>
+        <li>
+          <h1 class="menu-title">इन्टरटेनमेन्ट <span> लाइभ</span></h1>
+          <ul>
+            <li><a href="list.html"> नेपाल लाइभ</a></li>
+            <li><a href="list.html">राजनीति</a></li>
+            <li><a href="list.html"> निर्वाचन विशेष</a></li>
+            <li><a href="list.html"> प्रवास</a></li>
+            <li><a href="list.html"> विचार</a></li>
+            <li><a href="list.html"> फिचर</a></li>
+            <li><a href="list.html"> समाचार</a></li>
+            <li><a href="list.html"> ब्लग</a></li>
+            <li><a href="list.html"> समाज </a></li>
+            <li><a href="list.html"> अन्तर्वार्ता</a></li>
+          </ul>
+        </li>
+        <li>
+          <h1 class="menu-title">स्पोर्टस<span> लाइभ</span></h1>
+          <ul>
+            <li><a href="list.html"> नेपाल लाइभ</a></li>
+            <li><a href="list.html">राजनीति</a></li>
+            <li><a href="list.html"> निर्वाचन विशेष</a></li>
+            <li><a href="list.html"> प्रवास</a></li>
+            <li><a href="list.html"> विचार</a></li>
+            <li><a href="list.html"> फिचर</a></li>
+            <li><a href="list.html"> समाचार</a></li>
+            <li><a href="list.html"> ब्लग</a></li>
+            <li><a href="list.html"> समाज </a></li>
+            <li><a href="list.html"> अन्तर्वार्ता</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 1.2 Navigation menu -->
+    <nav class="menu-wrapper d-none d-lg-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-1">
+            <div class="hamburger-lines text-start" id="sticky-lines" onclick="showMenu()">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+
+          <div class="col-md-10">
+            <ul class="menu-items align-items-center justify-content-evenly" id="main-menu">
+              <li><a href="index.html">गृहपृष्ठ </a></li>
+              <li><a href="list.html">राजनीति</a></li>
+              <li><a href="list.html">निर्वाचन विशेष</a></li>
+              <li><a href="list.html">अनुसन्धान</a></li>
+              <li><a href="list.html">बिजनेस लाइभ</a></li>
+              <li><a href="list.html">इन्टरटेन्मेन्ट लाइभ</a></li>
+              <li><a href="list.html">स्पोर्टस लाइभ</a></li>
+              <li><a href="list.html">प्रवास</a></li>
+              <li><a href="list.html">भिडियो</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-1">
+            <div class="search" id="sticky-search" onclick="showSearch()">
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 1.3 Search form -->
+    <div class="search-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-md-12 col-sm-12">
+            <div class="search-form">
+              <form>
+                <div class="form-title d-flex justify-content-between pb-3">
+                  <h5>सर्च गर्नुहोस्</h5>
+                  <i class="fa-solid fa-xmark" onclick="closeSearch()"></i>
+                </div>
+                <fieldset class="period-area">
+                  <div class="period d-flex justify-content-between pb-3">
+                    <input type="text" onfocus="(this.type = 'date')" placeholder="From" />
+                    <input type="text" onfocus="(this.type = 'date')" placeholder="To" />
+                  </div>
+                  <div class="search-bar pb-3">
+                    <input type="search" placeholder="यहाँ टाईप गर्नुहोस् ..." />
+                  </div>
+                </fieldset>
+                <fieldset class="search-btn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="submit" value="Search" />
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Listing page starts here -->
+
+    <div class="list-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 col-md-6 col-sm-12">
+            <div class="list">
+              <div class="item hero-item">
+                <a href="./detail.html">
+                  <div class="news hero-news">
+                    <img src="./img/images/3.jpg" alt="" />
+                    <div class="details">
+                      <h1 class="md-heading py-3">मंसिर ४ गतेको निर्वाचनका लागि जारी आचारसंहिता सोमबारदेखि लागू नरहने निर्वाचन आयोगको निर्णय</h1>
+                      <p>
+                        मंसिर ४ गते भएको प्रदेश तथा प्रतिनिधि सभा निर्वाचनका लागि लागू भएको निर्वाचन आचारसंहिता आज (सोमबार)देखि लागू नरहने भएको छ।
+                        असोज १२ गतेदेखि देशभर लागू भएको निर्वाचन आचारसंहिता सोमबारदेखि लागू नहरने निर्वाचन आयोगले जनाएको छ।
+                      </p>
+                      <span><em>सोमबार, मंसिर २६, २०७९</em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा 1</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा 4</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा 2</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="./detail.html">
+                  <div class="news d-flex justify-content-between">
+                    <div class="featured-image">
+                      <img src="./img/images/3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h1 class="sm-heading">सोमबारदेखि निर्वाचन आचारसंहिता फुकुवा</h1>
+                      <p>
+                        निर्वाचन आयोगले गत असोज १२ गतेदेखि देशभर लागू गरेको निर्वाचन आचारसंहिता सोमबारदेखि नरहने निर्णय गरेको छ। आयोगले प्रतिनिधि सभा
+                        र प्रद...
+                      </p>
+                      <span><em>आइतबार, मंसिर २५, २०७९ </em></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav> -->
+            <ul class="pagination d-flex justify-content-start pt-3"></ul>
+            <!-- <nav class="pagination-wrapper">
+              <ul class="pagination d-flex">
+                <li class="page-item">
+                  <a href="#" class="prev">
+                    <span aria-hidden="true">«</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item active">
+                  <span aria-current="page" class="current">2</span>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a href="#">
+                    <span aria-hidden="true">»</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav> -->
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <div class="aside-news">
+              <div class="ads">
+                <a href="#">
+                  <img src="./img/advertisement/4.jpg" alt="" />
+                </a>
+              </div>
+              <aside>
+                <div class="latest-aside">
+                  <div class="section-title d-flex justify-content-between">
+                    <div class="title-left">
+                      <i class="fa-solid fa-list"></i>
+                      <a href="#">ताजा समाचार</a>
+                    </div>
+                    <div class="title-right">
+                      <a href="#">सबै</a>
+                    </div>
+                  </div>
+                  <a href="#">
+                    <div class="news d-flex justify-content-between">
+                      <div class="featured-image">
+                        <img src="./img/images/5.jpg" alt="" />
+                      </div>
+                      <div class="title">
+                        <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                        <div class="published-date">
+                          <p>आइतबार, मंसिर २५, २०७९</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="news d-flex justify-content-between">
+                      <div class="featured-image">
+                        <img src="./img/images/5.jpg" alt="" />
+                      </div>
+                      <div class="title">
+                        <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                        <div class="published-date">
+                          <p>आइतबार, मंसिर २५, २०७९</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="news d-flex justify-content-between">
+                      <div class="featured-image">
+                        <img src="./img/images/5.jpg" alt="" />
+                      </div>
+                      <div class="title">
+                        <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                        <div class="published-date">
+                          <p>आइतबार, मंसिर २५, २०७९</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="news d-flex justify-content-between">
+                      <div class="featured-image">
+                        <img src="./img/images/5.jpg" alt="" />
+                      </div>
+                      <div class="title">
+                        <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                        <div class="published-date">
+                          <p>आइतबार, मंसिर २५, २०७९</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="view-all d-flex justify-content-between">
+                    <a href="#">सबै हेर्नुहोस</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                </div>
+                <div class="aside-news mt-3">
+                  <aside>
+                    <div class="latest-aside">
+                      <div class="section-title d-flex justify-content-between">
+                        <div class="hero-news">
+                          <a href="#">
+                            <img src="./img/images/7.png" alt="" />
+                            <div class="overlay">
+                              <h1 class="sm-heading">औचित्यहीन कानुनको जरुरत छैन, थोरै होस् तर प्रभावकारी होस्</h1>
+                              <div class="published-date">
+                                <span><em>शनिबार, मंसिर १७, २०७९</em></span>
+                              </div>
+                            </div>
+                          </a>
+                          <div class="title-left">
+                            <i class="fa-solid fa-chart-column"></i>
+                            <a href="#">ट्रेण्डिङ</a>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#">
+                        <div class="news d-flex justify-content-start">
+                          <div class="featured-image">
+                            <img src="./img/images/5.jpg" alt="" />
+                          </div>
+                          <div class="title">
+                            <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                            <div class="published-date">
+                              <p>आइतबार, मंसिर २५, २०७९</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="news d-flex justify-content-start">
+                          <div class="featured-image">
+                            <img src="./img/images/5.jpg" alt="" />
+                          </div>
+                          <div class="title">
+                            <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                            <div class="published-date">
+                              <p>आइतबार, मंसिर २५, २०७९</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="news d-flex justify-content-start">
+                          <div class="featured-image">
+                            <img src="./img/images/5.jpg" alt="" />
+                          </div>
+                          <div class="title">
+                            <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                            <div class="published-date">
+                              <p>आइतबार, मंसिर २५, २०७९</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="news d-flex justify-content-start">
+                          <div class="featured-image">
+                            <img src="./img/images/5.jpg" alt="" />
+                          </div>
+                          <div class="title">
+                            <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                            <div class="published-date">
+                              <p>आइतबार, मंसिर २५, २०७९</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="view-all d-flex justify-content-between">
+                        <a href="#">सबै हेर्नुहोस</a>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+                <div class="political-wrapper">
+                  <div class="aside-news mt-3">
+                    <div class="ads">
+                      <a href="#">
+                        <img src="./img/advertisement/4.jpg" alt="" />
+                      </a>
+                    </div>
+                    <aside>
+                      <div class="latest-aside">
+                        <div class="section-title d-flex justify-content-between">
+                          <div class="title-left">
+                            <!-- <i class="fa-solid fa-list"></i> -->
+                            <a href="#">विचार</a>
+                          </div>
+                          <div class="title-right">
+                            <a href="#">सबै</a>
+                          </div>
+                        </div>
+                        <a href="#">
+                          <div class="news d-flex justify-content-start">
+                            <div class="featured-image">
+                              <img src="./img/images/5.jpg" alt="" />
+                            </div>
+                            <div class="title">
+                              <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                              <div class="published-date">
+                                <p><em> आइतबार, मंसिर २५, २०७९ </em></p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="news d-flex justify-content-start">
+                            <div class="featured-image">
+                              <img src="./img/images/5.jpg" alt="" />
+                            </div>
+                            <div class="title">
+                              <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                              <div class="published-date">
+                                <p><em> आइतबार, मंसिर २५, २०७९ </em></p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="news d-flex justify-content-start">
+                            <div class="featured-image">
+                              <img src="./img/images/5.jpg" alt="" />
+                            </div>
+                            <div class="title">
+                              <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                              <div class="published-date">
+                                <p><em> आइतबार, मंसिर २५, २०७९ </em></p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="news d-flex justify-content-start">
+                            <div class="featured-image">
+                              <img src="./img/images/5.jpg" alt="" />
+                            </div>
+                            <div class="title">
+                              <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                              <div class="published-date">
+                                <p><em> आइतबार, मंसिर २५, २०७९ </em></p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="news d-flex justify-content-start">
+                            <div class="featured-image">
+                              <img src="./img/images/5.jpg" alt="" />
+                            </div>
+                            <div class="title">
+                              <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                              <div class="published-date">
+                                <p><em> आइतबार, मंसिर २५, २०७९ </em></p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="news d-flex justify-content-start">
+                            <div class="featured-image">
+                              <img src="./img/images/5.jpg" alt="" />
+                            </div>
+                            <div class="title">
+                              <h1 class="sm-heading">लोरिसले तोडे थुरामको कीर्तिमान</h1>
+                              <div class="published-date">
+                                <p><em> आइतबार, मंसिर २५, २०७९ </em></p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+
+                        <div class="view-all d-flex justify-content-between">
+                          <a href="#">सबै हेर्नुहोस</a>
+                          <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                      </div>
+                    </aside>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Listing page ends here -->
+
+    <!-- 13. footer  -->
+    <div class="footer-wrapper">
+      <div class="container">
+        <div class="footer-header d-flex justify-content-between">
+          <div class="footer-logo">
+            <img src="./img/logo/logo.png" alt="" />
+          </div>
+
+          <div class="socials d-flex">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-xl-3 col-md-3 col-sm-12">
+            <div class="footer footer-about">
+              <h1 class="sm-heading pb-4">सम्पर्क ठेगाना</h1>
+              <h1 class="sm-heading">Nepal Live Publication Pvt. Ltd., Anamnagar, Kathmandu, Nepal</h1>
+              <div class="registration py-4">
+                <h1 class="sm-heading">DEPARTMENT OF INFORMATION AND BROADCASTING Regd Number :</h1>
+                <span>1568/ 076-077</span>
+              </div>
+              <div class="team">
+                <p><span>अध्यक्ष : </span>अनिल न्यौपाने</p>
+                <p><span>समूह सम्पादक : </span>भगिरथ योगी</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-12">
+            <div class="footer contact-wrapper">
+              <div class="phone">
+                <h1 class="sm-heading">टेलिफोन</h1>
+                <div class="details py-4">
+                  <p><span>News Section: </span>+977-1-5705056</p>
+                  <p><span>Account :</span>+977-1-5705056</p>
+                  <p><span>Sales & Marketing:</span> 9851030103 (विज्ञापनका लागि मात्र)</p>
+                  <p><span> Telephone Number: </span>01-5907131</p>
+                </div>
+              </div>
+              <div class="email">
+                <h1 class="sm-heading">ईमेल</h1>
+                <div class="details py-4">
+                  <p>news@nepallive.com</p>
+                  <p>nepallivemarketing@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-2 col-sm-12">
+            <div class="footer">
+              <h1 class="sm-heading pb-4">मेनु</h1>
+              <div id="quick-menu"></div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-3 col-sm-12">
+            <div class="footer footer-health">
+              <a href="#">
+                <img src="./img/logo/1.png" alt="" />
+              </a>
+
+              <h1 class="sm-heading py-3">सूचना विभाग दर्ता नं.</h1>
+              <span>१५६९/०७६-७७</span>
+              <div class="email pt-3">
+                <h1 class="sm-heading">ईमेल</h1>
+                <div class="details">
+                  <p>healthnewspaper@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Slick Slider -->
+    <script src="./JS/slick.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
